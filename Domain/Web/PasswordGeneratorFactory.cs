@@ -1,9 +1,9 @@
 namespace PasswordGeneratorApi.Domain.Web;
 
-public class PasswordGenerator: IPasswordGeneratorFactory
+public class PasswordGeneratorFactory: IPasswordGeneratorFactory
 {
     private readonly IServiceProvider _service;
-    public PasswordGenerator(IServiceProvider service)
+    public PasswordGeneratorFactory(IServiceProvider service)
     {
         _service = service;
     }
