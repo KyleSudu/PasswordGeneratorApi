@@ -8,8 +8,9 @@ public static class ServiceRegistrationExtension
     public static IServiceCollection AddDomainServices(this IServiceCollection services)
     {
         return services
-            .AddTransient<IPasswordGenerator, NaivePasswordGenerator>()
-            .AddTransient<IPasswordGenerator, Md5Generator>()
-            .AddTransient<IPasswordGenerator, SHA256Generator>();
+            .AddTransient<NaivePasswordGenerator>()
+            .AddTransient<Md5Generator>()
+            .AddTransient<IPasswordGeneratorFactory, PasswordGeneratorFactory>()
+            .AddTransient<SHA256Generator>();
     }
 }
