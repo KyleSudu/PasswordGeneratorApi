@@ -1,4 +1,6 @@
-using PasswordGeneratorApi.Domain.Web;
+using Microsoft.AspNetCore.Mvc;
+using PasswordGeneratorApi.DependencyInjection;
+using PasswordGeneratorApi.Domain;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,6 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddDomainServices();
+
 
 var app = builder.Build();
 
@@ -38,10 +42,9 @@ app.MapGet("/weatherforecast", () =>
 .WithName("GetWeatherForecast");
 
 
-app.MapGet("generatePassword", () =>
+app.MapGet("generatePassword/{scheme}", ([FromQuery] string scheme, [FromServices] IPasswordGeneratorFactory generatorFactory) =>
 {
-    var generator = new PasswordGenerator();
-    var passwordGenerator = generator.CreatePasswordGenerator("SHA256");
+    var passwordGenerator = generatorFactory.CreatePasswordGenerator(scheme);
     passwordGenerator.GeneratePassword();
 });
 

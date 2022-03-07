@@ -1,14 +1,12 @@
 namespace PasswordGeneratorApi.Domain.Web;
 
-public class MD5Generator: IPasswordGenerator
+public class Md5Generator: IPasswordGenerator
 {
-    public string GeneratorName { get; }
 
-    public MD5Generator(string generatorName)
+    public Md5Generator()
     {
-        GeneratorName = generatorName;
-
     }
+    
     public string GeneratePassword()
     {
         throw new NotImplementedException();

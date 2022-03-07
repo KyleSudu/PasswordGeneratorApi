@@ -1,22 +1,23 @@
 namespace PasswordGeneratorApi.Domain.Web;
 
-public class PasswordGenerator
+public class PasswordGenerator: IPasswordGeneratorFactory
 {
-    public PasswordGenerator()
+    private readonly IServiceProvider _service;
+    public PasswordGenerator(IServiceProvider service)
     {
-        
+        _service = service;
     }
     
     public IPasswordGenerator CreatePasswordGenerator(string generatorName)
     {
         switch (generatorName)
         {
-            case "SHA256": 
-                return new SHA256Generator(generatorName);
+            case "SHA256":
+                return _service.GetRequiredService<SHA256Generator>();
             case "MD5": 
-                return new MD5Generator(generatorName);
+                return _service.GetRequiredService<Md5Generator>();
             case "Naive": 
-                return new NaivePasswordGenerator(generatorName);
+                return _service.GetRequiredService<NaivePasswordGenerator>();
             default:
                 throw new ApplicationException("Haven't made that shit yet.");
         }
