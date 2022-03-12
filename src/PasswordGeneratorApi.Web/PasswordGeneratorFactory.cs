@@ -1,4 +1,7 @@
-namespace PasswordGeneratorApi.Domain.Web;
+using PasswordGeneratorApi.Domain;
+using PasswordGeneratorApi.Domain.Web;
+
+namespace PasswordGeneratorApi;
 
 public class PasswordGeneratorFactory: IPasswordGeneratorFactory
 {

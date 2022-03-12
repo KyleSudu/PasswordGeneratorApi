@@ -1,9 +1,13 @@
-namespace PasswordGeneratorApi.Domain.Web;
+using PasswordGeneratorApi.Domain;
+using PasswordGeneratorApi.Domain.Web.Domain.Models.DTO;
+
+namespace PasswordGeneratorApi;
 
 public class NaivePasswordGenerator: IPasswordGenerator
 {
-    public string GeneratePassword()
+    public ComputedPassword GeneratePassword()
     {
-        throw new NotImplementedException();
+        Console.WriteLine("Naive Password");
+        throw new NotImplementedException("Not done yet");
     }
 }

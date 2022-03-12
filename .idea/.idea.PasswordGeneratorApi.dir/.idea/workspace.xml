@@ -6,60 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a10d9650-6add-42e9-bf73-98056506c25b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PasswordGeneratorApi.dir/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PasswordGeneratorApi.dir/.idea/aws.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PasswordGeneratorApi.dir/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PasswordGeneratorApi.dir/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PasswordGeneratorApi.dir/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DependencyInjection/ServiceRegistrationExtension.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/Interfaces/IPasswordGenerator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/Interfaces/IPasswordGeneratorFactory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/Web/MD5Generator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/Web/NaivePasswordGenerator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/Web/PasswordGeneratorFactory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/Web/SHA256Generator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PasswordGeneratorApi.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Properties/launchSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appsettings.Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appsettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.OpenApi.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/PasswordGeneratorApi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/PasswordGeneratorApi.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/PasswordGeneratorApi.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/PasswordGeneratorApi.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/PasswordGeneratorApi.runtimeconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/appsettings.Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/appsettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ref/PasswordGeneratorApi.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PasswordGeneratorApi.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PasswordGeneratorApi.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PasswordGeneratorApi.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PasswordGeneratorApi.GlobalUsings.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PasswordGeneratorApi.MvcApplicationPartsAssemblyInfo.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PasswordGeneratorApi.MvcApplicationPartsAssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PasswordGeneratorApi.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PasswordGeneratorApi.csproj.AssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PasswordGeneratorApi.csproj.CopyComplete" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PasswordGeneratorApi.csproj.CoreCompileInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PasswordGeneratorApi.csproj.FileListAbsolute.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PasswordGeneratorApi.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PasswordGeneratorApi.genruntimeconfig.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/PasswordGeneratorApi.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/apphost" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ref/PasswordGeneratorApi.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/staticwebassets.build.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/PasswordGeneratorApi.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/PasswordGeneratorApi.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/PasswordGeneratorApi.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/staticwebassets.pack.sentinel" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PasswordGeneratorApi.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PasswordGeneratorApi.dir/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +84,7 @@
       <updated>1646671665286</updated>
       <workItem from="1646671670301" duration="8881000" />
       <workItem from="1646749923420" duration="885000" />
-      <workItem from="1646778872407" duration="1564000" />
+      <workItem from="1646778872407" duration="2031000" />
     </task>
     <task id="LOCAL-00001" summary="Inject generator via DI">
       <created>1646695565372</created>
@@ -160,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646696151130</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Project restructure to make it make more sense.">
+      <created>1646780753221</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1646780753221</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +139,7 @@
     <MESSAGE value="Inject generator via DI" />
     <MESSAGE value="File rename" />
     <MESSAGE value="Being explicit with multiple classes that inherit that interface causes .net to get confused." />
-    <option name="LAST_COMMIT_MESSAGE" value="Being explicit with multiple classes that inherit that interface causes .net to get confused." />
+    <MESSAGE value="Project restructure to make it make more sense." />
+    <option name="LAST_COMMIT_MESSAGE" value="Project restructure to make it make more sense." />
   </component>
 </project>

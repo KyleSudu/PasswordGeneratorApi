@@ -17,10 +17,14 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(options =>
+    {
+        options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
+        options.RoutePrefix = string.Empty;
+    });
 }
 
-app.UseHttpsRedirection();
+// app.UseHttpsRedirection();
 
 var summaries = new[]
 {
@@ -42,15 +46,21 @@ app.MapGet("/weatherforecast", () =>
 .WithName("GetWeatherForecast");
 
 
-app.MapGet("generatePassword/{scheme}", ([FromQuery] string scheme, [FromServices] IPasswordGeneratorFactory generatorFactory) =>
+// app.MapGet("/GeneratePassword/{scheme}", ([FromQuery] string scheme, [FromServices] IPasswordGeneratorFactory generatorFactory) =>
+// {
+//     var passwordGenerator = generatorFactory.CreatePasswordGenerator(scheme);
+//     return passwordGenerator.GeneratePassword();
+// });
+
+app.MapGet("/GeneratePassword/{scheme}", (string scheme, [FromServices] IPasswordGeneratorFactory generatorFactory) =>
 {
     var passwordGenerator = generatorFactory.CreatePasswordGenerator(scheme);
-    passwordGenerator.GeneratePassword();
+    return passwordGenerator.GeneratePassword();
 });
 
+var port = Environment.GetEnvironmentVariable("PORT") ?? "5010";
 
-app.Run();
-
+app.Run($"http://*:{port}");
 record WeatherForecast(DateTime Date, int TemperatureC, string? Summary)
 {
     public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
