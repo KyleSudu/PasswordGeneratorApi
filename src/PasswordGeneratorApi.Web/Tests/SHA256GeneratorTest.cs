@@ -14,7 +14,7 @@ public class SHA256GeneratorTest: BaseTests<SHA256Generator>
 
 
     [TestMethod]
-    public Task WhenGeneratingPasswords_BasePasswordLengthGreaterThanZero()
+    public void WhenGeneratingPasswords_BasePasswordLengthGreaterThanZero()
     {
         var passwordResponse = Sut.GeneratePassword();
         var isBasePasswordLongEnough = passwordResponse.BasePassword.Length > 0;
