@@ -42,7 +42,7 @@ public class SHA256Generator: IPasswordGenerator
             randomCharacters.Add((char)guidObject[position]);
         }
 
-        return randomCharacters.ToString();
+        return new string(randomCharacters.ToArray());
     }
     
 }

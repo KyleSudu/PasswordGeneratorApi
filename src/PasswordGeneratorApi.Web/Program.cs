@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using PasswordGeneratorApi.DependencyInjection;
 using PasswordGeneratorApi.Domain;
 
@@ -8,7 +9,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddDomainServices();
+builder.Services
+    .AddDomainServices()
+    .TryAddSingleton<Random>();
 
 
 var app = builder.Build();
@@ -55,7 +58,9 @@ app.MapGet("/weatherforecast", () =>
 app.MapGet("/GeneratePassword/{scheme}", (string scheme, [FromServices] IPasswordGeneratorFactory generatorFactory) =>
 {
     var passwordGenerator = generatorFactory.CreatePasswordGenerator(scheme);
-    return passwordGenerator.GeneratePassword();
+    var generatedPassword = passwordGenerator.GeneratePassword();
+    return generatedPassword;
+
 });
 
 var port = Environment.GetEnvironmentVariable("PORT") ?? "5010";
