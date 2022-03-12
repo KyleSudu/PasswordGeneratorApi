@@ -1,9 +1,8 @@
 using System.Security.Cryptography;
 using System.Text;
-using PasswordGeneratorApi.Domain;
 using PasswordGeneratorApi.Domain.Web.Domain.Models.DTO;
 
-namespace PasswordGeneratorApi;
+namespace PasswordGeneratorApi.Domain.Service;
 
 public class SHA256Generator: IPasswordGenerator
 {

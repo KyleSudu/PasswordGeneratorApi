@@ -1,7 +1,6 @@
-using PasswordGeneratorApi.Domain;
 using PasswordGeneratorApi.Domain.Web.Domain.Models.DTO;
 
-namespace PasswordGeneratorApi;
+namespace PasswordGeneratorApi.Domain.Service;
 
 public class Md5Generator: IPasswordGenerator
 {
