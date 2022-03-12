@@ -30,7 +30,7 @@ public class SHA256Generator: IPasswordGenerator
     }
     
 
-    public string GenerateBasePassword()
+    private string GenerateBasePassword()
     {
         var guidObject = Guid.NewGuid().ToByteArray();
 
