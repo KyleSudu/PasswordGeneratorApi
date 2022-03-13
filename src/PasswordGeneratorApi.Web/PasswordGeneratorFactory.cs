@@ -1,6 +1,6 @@
 using PasswordGeneratorApi.Domain;
+using PasswordGeneratorApi.Domain.Interfaces;
 using PasswordGeneratorApi.Domain.Service;
-using PasswordGeneratorApi.Domain.Web;
 
 namespace PasswordGeneratorApi;
 

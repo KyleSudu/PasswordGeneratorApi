@@ -1,5 +1,6 @@
 using System.Security.Cryptography;
 using System.Text;
+using PasswordGeneratorApi.Domain.Interfaces;
 using PasswordGeneratorApi.Domain.Web.Domain.Models.DTO;
 
 namespace PasswordGeneratorApi.Domain.Service;
