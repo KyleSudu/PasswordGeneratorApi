@@ -1,6 +1,7 @@
 using System.Security.Cryptography;
 using System.Text;
 using PasswordGeneratorApi.Domain.Interfaces;
+using PasswordGeneratorApi.Domain.Utils;
 using PasswordGeneratorApi.Domain.Web.Domain.Models.DTO;
 
 namespace PasswordGeneratorApi.Domain.Service;
@@ -9,14 +10,16 @@ public class SHA256Generator: IPasswordGenerator
 {
     private static int _passwordLength;
     private readonly Random _randomGenerator;
-    public SHA256Generator(Random randomGenerator)
+    private readonly BasePasswordGenerator _basePasswordGenerator;
+    public SHA256Generator(Random randomGenerator, BasePasswordGenerator basePasswordGenerator)
     {
         _randomGenerator = randomGenerator;
         _passwordLength = _randomGenerator.Next(10, 20);
+        _basePasswordGenerator = basePasswordGenerator;
     }
     public ComputedPassword GeneratePassword()
     {
-        var basePassword = GenerateBasePassword();
+        var basePassword = _basePasswordGenerator.GenerateBasePassword(_passwordLength, _randomGenerator);
         using var mySHA256 = SHA256.Create();
         byte[] hashValue;
         var objUtf8 = new UTF8Encoding();
@@ -29,20 +32,5 @@ public class SHA256Generator: IPasswordGenerator
             
         return generatedPassword;
     }
-    
 
-    private string GenerateBasePassword()
-    {
-        var guidObject = Guid.NewGuid().ToByteArray();
-
-        var randomCharacters = new List<char>();
-        for (var i = 0; i < _passwordLength; i++)
-        {
-            var position = _randomGenerator.Next(0, guidObject.Length);
-            randomCharacters.Add((char)guidObject[position]);
-        }
-
-        return new string(randomCharacters.ToArray());
-    }
-    
 }
