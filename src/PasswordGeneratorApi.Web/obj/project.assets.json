@@ -6821,9 +6821,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/kyle/Workspaces/Kyle/PasswordGeneratorApi/src/PasswordGeneratorApi.Web/PasswordGeneratorApi.csproj",
-      "projectName": "PasswordGeneratorApi",
-      "projectPath": "/Users/kyle/Workspaces/Kyle/PasswordGeneratorApi/src/PasswordGeneratorApi.Web/PasswordGeneratorApi.csproj",
+      "projectUniqueName": "/Users/kyle/Workspaces/Kyle/PasswordGeneratorApi/src/PasswordGeneratorApi.Web/PasswordGeneratorApi.Web.csproj",
+      "projectName": "PasswordGeneratorApi.Web",
+      "projectPath": "/Users/kyle/Workspaces/Kyle/PasswordGeneratorApi/src/PasswordGeneratorApi.Web/PasswordGeneratorApi.Web.csproj",
       "packagesPath": "/Users/kyle/.nuget/packages/",
       "outputPath": "/Users/kyle/Workspaces/Kyle/PasswordGeneratorApi/src/PasswordGeneratorApi.Web/obj/",
       "projectStyle": "PackageReference",

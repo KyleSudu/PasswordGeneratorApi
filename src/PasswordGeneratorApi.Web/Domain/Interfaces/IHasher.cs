@@ -2,7 +2,7 @@ using PasswordGeneratorApi.Domain.Web.Domain.Models.DTO;
 
 namespace PasswordGeneratorApi.Domain.Interfaces;
 
-public interface IPasswordGenerator
+public interface IHasher
 {
-    ComputedPassword GeneratePassword(string hashingService);
+    string Hash(string input);
 }

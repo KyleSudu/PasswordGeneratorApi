@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordGeneratorApi", "PasswordGeneratorApi.Web\PasswordGeneratorApi.csproj", "{C6888D65-585E-4FED-BBD6-E1068576EB6B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordGeneratorApi.Web", "PasswordGeneratorApi.Web\PasswordGeneratorApi.Web.csproj", "{210EDD0A-8A97-4EF7-8CB8-A8BE4A6BD5CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordGeneratorApi.Domain", "PasswordGeneratorApi.Domain\PasswordGeneratorApi.Domain.csproj", "{506C75C3-D708-438A-8AAD-74C13AAB4A45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordGeneratorApi.Domain.Test", "PasswordGeneratorApi.Domain.Test\PasswordGeneratorApi.Domain.Test.csproj", "{57C483C8-6A32-42BD-81BB-30C28EEAE070}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,9 +18,17 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C6888D65-585E-4FED-BBD6-E1068576EB6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C6888D65-585E-4FED-BBD6-E1068576EB6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C6888D65-585E-4FED-BBD6-E1068576EB6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C6888D65-585E-4FED-BBD6-E1068576EB6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{210EDD0A-8A97-4EF7-8CB8-A8BE4A6BD5CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{210EDD0A-8A97-4EF7-8CB8-A8BE4A6BD5CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{210EDD0A-8A97-4EF7-8CB8-A8BE4A6BD5CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{210EDD0A-8A97-4EF7-8CB8-A8BE4A6BD5CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{506C75C3-D708-438A-8AAD-74C13AAB4A45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{506C75C3-D708-438A-8AAD-74C13AAB4A45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{506C75C3-D708-438A-8AAD-74C13AAB4A45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{506C75C3-D708-438A-8AAD-74C13AAB4A45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57C483C8-6A32-42BD-81BB-30C28EEAE070}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57C483C8-6A32-42BD-81BB-30C28EEAE070}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57C483C8-6A32-42BD-81BB-30C28EEAE070}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57C483C8-6A32-42BD-81BB-30C28EEAE070}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

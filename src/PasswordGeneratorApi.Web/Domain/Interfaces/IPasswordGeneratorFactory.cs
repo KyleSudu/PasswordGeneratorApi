@@ -4,5 +4,5 @@ namespace PasswordGeneratorApi.Domain;
 
 public interface IPasswordGeneratorFactory
 {
-    IPasswordGenerator CreatePasswordGenerator(string schema);
+    IHasher CreatePasswordGenerator(string schema);
 }

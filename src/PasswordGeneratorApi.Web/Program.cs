@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using PasswordGeneratorApi.DependencyInjection;
 using PasswordGeneratorApi.Domain;
+using PasswordGeneratorApi.Domain.Interfaces;
+using PasswordGeneratorApi.Domain.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -48,20 +50,8 @@ app.MapGet("/weatherforecast", () =>
 })
 .WithName("GetWeatherForecast");
 
-
-// app.MapGet("/GeneratePassword/{scheme}", ([FromQuery] string scheme, [FromServices] IPasswordGeneratorFactory generatorFactory) =>
-// {
-//     var passwordGenerator = generatorFactory.CreatePasswordGenerator(scheme);
-//     return passwordGenerator.GeneratePassword();
-// });
-
-app.MapGet("/GeneratePassword/{scheme}", (string scheme, [FromServices] IPasswordGeneratorFactory generatorFactory) =>
-{
-    var passwordGenerator = generatorFactory.CreatePasswordGenerator(scheme);
-    var generatedPassword = passwordGenerator.GeneratePassword();
-    return generatedPassword;
-
-});
+app.MapGet("/GeneratePassword/{scheme}", (string scheme, 
+    [FromServices] IPasswordGenerator passwordGenerator) => passwordGenerator.GeneratePassword(scheme));
 
 var port = Environment.GetEnvironmentVariable("PORT") ?? "5010";
 

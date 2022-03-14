@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gnsWl/BWIGa3jLA1RO2q8FiOC3o9tqmYfRPIYMfiiLZMv4lHqpbhkTgddUItj3ZpKN4Z3MfYPqjn9zTqalmW+w==",
+  "dgSpecHash": "PHOmrq4eV5Vhl0ShPFtqdpg7JPuGM+htrUdPchFZRAmKooYmWBLdVEZoGwRa4qh1I7lcRRtRoXx0v5crNVFr7Q==",
   "success": true,
-  "projectFilePath": "/Users/kyle/Workspaces/Kyle/PasswordGeneratorApi/src/PasswordGeneratorApi.Web/PasswordGeneratorApi.csproj",
+  "projectFilePath": "/Users/kyle/Workspaces/Kyle/PasswordGeneratorApi/src/PasswordGeneratorApi.Web/PasswordGeneratorApi.Web.csproj",
   "expectedPackageFiles": [
     "/Users/kyle/.nuget/packages/castle.core/4.4.1/castle.core.4.4.1.nupkg.sha512",
     "/Users/kyle/.nuget/packages/microsoft.codecoverage/17.1.0/microsoft.codecoverage.17.1.0.nupkg.sha512",
