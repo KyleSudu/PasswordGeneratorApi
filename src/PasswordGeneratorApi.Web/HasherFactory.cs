@@ -5,7 +5,7 @@ using PasswordGeneratorApi.Domain.Service.Hashing;
 
 namespace PasswordGeneratorApi;
 
-public class HasherFactory: IPasswordGeneratorFactory
+public class HasherFactory: IHasherFactory
 {
     private readonly IServiceProvider _service;
     public HasherFactory(IServiceProvider service)

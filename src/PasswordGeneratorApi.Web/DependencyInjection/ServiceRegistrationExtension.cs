@@ -1,4 +1,5 @@
 using PasswordGeneratorApi.Domain;
+using PasswordGeneratorApi.Domain.Interfaces;
 using PasswordGeneratorApi.Domain.Service;
 using PasswordGeneratorApi.Domain.Service.Hashing;
 using PasswordGeneratorApi.Domain.Utils;
@@ -14,7 +15,8 @@ public static class ServiceRegistrationExtension
             .AddTransient<BasePasswordGenerator>()
             .AddTransient<NaiveHasher>()
             .AddTransient<Md5Generator>()
-            .AddTransient<IPasswordGeneratorFactory, HasherFactory>()
+            .AddTransient<IPasswordGenerator, PasswordGenerator>()
+            .AddTransient<IHasherFactory, HasherFactory>()
             .AddTransient<SHA256Generator>();
     }
 }

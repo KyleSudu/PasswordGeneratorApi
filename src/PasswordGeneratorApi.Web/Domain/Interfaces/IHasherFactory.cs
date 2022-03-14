@@ -2,7 +2,7 @@ using PasswordGeneratorApi.Domain.Interfaces;
 
 namespace PasswordGeneratorApi.Domain;
 
-public interface IPasswordGeneratorFactory
+public interface IHasherFactory
 {
     IHasher CreatePasswordGenerator(string schema);
 }

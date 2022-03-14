@@ -1,5 +1,4 @@
 using PasswordGeneratorApi.Domain.Interfaces;
-using PasswordGeneratorApi.Domain.Utils;
 using PasswordGeneratorApi.Domain.Web.Domain.Models.DTO;
 
 namespace PasswordGeneratorApi.Domain.Service;
@@ -8,9 +7,9 @@ public class PasswordGenerator: IPasswordGenerator
 {
     private static int _passwordLength;
     private readonly Random _randomGenerator;
-    private readonly HasherFactory _hasherFactory;
+    private readonly IHasherFactory _hasherFactory;
    
-    public PasswordGenerator(Random randomGenerator, HasherFactory hasherFactory)
+    public PasswordGenerator(Random randomGenerator, IHasherFactory hasherFactory)
     {
         _randomGenerator = randomGenerator;
         _passwordLength = _randomGenerator.Next(10, 20);

@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "RkKeF6E65BqBc4HntQs+T6eK1w4yTSWkjSZ8sm9sHvA=",
-  "Source": "PasswordGeneratorApi",
-  "BasePath": "_content/PasswordGeneratorApi",
+  "Hash": "gA97mEgoz6yiFI3FE/tEjfIfr+00zrX+cfH2kJbSwc0=",
+  "Source": "PasswordGeneratorApi.Web",
+  "BasePath": "_content/PasswordGeneratorApi.Web",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

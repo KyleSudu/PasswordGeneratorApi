@@ -50,7 +50,7 @@ app.MapGet("/weatherforecast", () =>
 })
 .WithName("GetWeatherForecast");
 
-app.MapGet("/GeneratePassword/{scheme}", (string scheme, 
+app.MapGet("/GeneratePassword", ([FromQuery]string scheme, 
     [FromServices] IPasswordGenerator passwordGenerator) => passwordGenerator.GeneratePassword(scheme));
 
 var port = Environment.GetEnvironmentVariable("PORT") ?? "5010";
