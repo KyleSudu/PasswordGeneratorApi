@@ -2,19 +2,14 @@ namespace PasswordGeneratorApi.Domain.Utils;
 
 public class BasePasswordGenerator
 {
-    public BasePasswordGenerator()
-    {
-        
-    }
-    
-    public string GenerateBasePassword(int _passwordLength, Random _randomGenerator)
+    public string GenerateBasePassword(int passwordLength, Random randomGenerator)
     {
         var guidObject = Guid.NewGuid().ToByteArray();
 
         var randomCharacters = new List<char>();
-        for (var i = 0; i < _passwordLength; i++)
+        for (var i = 0; i < passwordLength; i++)
         {
-            var position = _randomGenerator.Next(0, guidObject.Length);
+            var position = randomGenerator.Next(0, guidObject.Length);
             randomCharacters.Add((char)guidObject[position]);
         }
 
