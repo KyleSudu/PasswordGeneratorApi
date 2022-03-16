@@ -17,6 +17,7 @@ public static class ServiceRegistrationExtension
             .AddTransient<Md5Generator>()
             .AddTransient<IPasswordGenerator, PasswordGenerator>()
             .AddTransient<IHasherFactory, HasherFactory>()
+            .AddTransient<IRandomNumberGenerator, RandomNumberGenerator>()
             .AddTransient<SHA256Generator>();
     }
 }

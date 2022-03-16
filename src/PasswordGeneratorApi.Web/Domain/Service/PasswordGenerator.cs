@@ -6,13 +6,13 @@ namespace PasswordGeneratorApi.Domain.Service;
 public class PasswordGenerator: IPasswordGenerator
 {
     private static int _passwordLength;
-    private readonly Random _randomGenerator;
     private readonly IHasherFactory _hasherFactory;
+    private readonly IRandomNumberGenerator _randomNumberGenerator;
    
-    public PasswordGenerator(Random randomGenerator, IHasherFactory hasherFactory)
+    public PasswordGenerator(IHasherFactory hasherFactory, IRandomNumberGenerator randomNumberGenerator)
     {
-        _randomGenerator = randomGenerator;
-        _passwordLength = _randomGenerator.Next(10, 20);
+        _randomNumberGenerator = randomNumberGenerator;
+        _passwordLength = _randomNumberGenerator.GetRandomInt(10, 20);
         _hasherFactory = hasherFactory;
     }
     
@@ -36,7 +36,7 @@ public class PasswordGenerator: IPasswordGenerator
         var randomCharacters = new List<char>();
         for (var i = 0; i < _passwordLength; i++)
         {
-            var position = _randomGenerator.Next(0, guidObject.Length);
+            var position = _randomNumberGenerator.GetRandomInt(0, guidObject.Length);
             randomCharacters.Add((char)guidObject[position]);
         }
         return new string(randomCharacters.ToArray());

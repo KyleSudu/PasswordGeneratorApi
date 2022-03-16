@@ -12,8 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services
-    .AddDomainServices()
-    .TryAddSingleton<Random>();
+    .AddDomainServices();
 
 
 var app = builder.Build();
