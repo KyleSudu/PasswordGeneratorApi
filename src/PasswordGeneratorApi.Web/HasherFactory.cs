@@ -1,6 +1,4 @@
-using PasswordGeneratorApi.Domain;
 using PasswordGeneratorApi.Domain.Interfaces;
-using PasswordGeneratorApi.Domain.Service;
 using PasswordGeneratorApi.Domain.Service.Hashing;
 
 namespace PasswordGeneratorApi;
@@ -13,19 +11,14 @@ public class HasherFactory: IHasherFactory
         _service = service;
     }
     
-    public IHasher CreatePasswordGenerator(string generatorName)
+    public IHasher CreatePasswordHasher(string generatorName)
     {
-        switch (generatorName)
+        return generatorName switch
         {
-            case "SHA256":
-                return _service.GetRequiredService<SHA256Generator>();
-            case "MD5": 
-                return _service.GetRequiredService<Md5Generator>();
-            case "Naive": 
-                return _service.GetRequiredService<NaiveHasher>();
-            default:
-                throw new ApplicationException("Haven't made that shit yet.");
-        }
-
+            "SHA256" => _service.GetRequiredService<SHA256Hasher>(),
+            "MD5" => _service.GetRequiredService<Md5Hasher>(),
+            "Naive" => _service.GetRequiredService<NaiveHasher>(),
+            _ => throw new ApplicationException("Haven't made that shit yet.")
+        };
     }
 }

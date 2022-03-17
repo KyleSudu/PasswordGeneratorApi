@@ -6,6 +6,6 @@ public class RandomNumberGenerator: IRandomNumberGenerator
 {
     public int GetRandomInt(int min, int max)
     {
-        throw new NotImplementedException();
+        return 5;
     }
 }

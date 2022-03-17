@@ -1,6 +1,8 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f2166335_002Dc51b_002D465d_002Daa72_002D3f9c245bdd4e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="WhenGeneratingPasswords_BasePasswordLengthGreaterThanZero" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
-    &lt;TestId&gt;MSTest::C6888D65-585E-4FED-BBD6-E1068576EB6B::net6.0::PasswordGeneratorApi.Tests.SHA256GeneratorTest.WhenGeneratingPasswords_BasePasswordLengthGreaterThanZero&lt;/TestId&gt;
+    &lt;TestId&gt;MSTest::57C483C8-6A32-42BD-81BB-30C28EEAE070::net6.0::PasswordGeneratorApi.Domain.Test.Services.BasePasswordGeneratorTest&lt;/TestId&gt;
+    &lt;TestId&gt;MSTest::57C483C8-6A32-42BD-81BB-30C28EEAE070::net6.0::PasswordGeneratorApi.Domain.Test.Services.SHA256HasherTest.WhenGeneratingPasswords_BasePasswordLengthGreaterThanZero&lt;/TestId&gt;
+    &lt;TestId&gt;MSTest::57C483C8-6A32-42BD-81BB-30C28EEAE070::net6.0::PasswordGeneratorApi.Domain.Test.Services.SHA256HasherTest.WhenHashingPasswords_HashedPasswordsDoNotMatch&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

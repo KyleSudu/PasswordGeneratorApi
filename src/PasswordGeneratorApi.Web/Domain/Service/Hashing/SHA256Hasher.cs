@@ -6,7 +6,7 @@ using PasswordGeneratorApi.Domain.Web.Domain.Models.DTO;
 
 namespace PasswordGeneratorApi.Domain.Service.Hashing;
 
-public class SHA256Generator: IHasher
+public class SHA256Hasher: IHasher
 {
     public string Hash(string input)
     {

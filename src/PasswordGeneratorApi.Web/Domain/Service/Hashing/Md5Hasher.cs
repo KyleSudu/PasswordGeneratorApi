@@ -4,7 +4,7 @@ using PasswordGeneratorApi.Domain.Interfaces;
 
 namespace PasswordGeneratorApi.Domain.Service.Hashing;
 
-public class Md5Generator: IHasher
+public class Md5Hasher: IHasher
 {
     public string Hash(string input)
     {

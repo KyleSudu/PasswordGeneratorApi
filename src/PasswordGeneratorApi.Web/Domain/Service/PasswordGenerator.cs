@@ -19,7 +19,7 @@ public class PasswordGenerator: IPasswordGenerator
     public ComputedPassword GeneratePassword(string hashingService)
     {
         var basePassword = GenerateBasePassword();
-        var hasher = _hasherFactory.CreatePasswordGenerator(hashingService);
+        var hasher = _hasherFactory.CreatePasswordHasher(hashingService);
         var hashedPassword = hasher.Hash(basePassword);
         
         return new ComputedPassword

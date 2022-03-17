@@ -1,12 +1,13 @@
 using System;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Hosting;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Moq;
-using PasswordGeneratorApi.DependencyInjection;
+using PasswordGeneratorApi.Domain.Interfaces;
+using PasswordGeneratorApi.Domain.Service;
+using PasswordGeneratorApi.Domain.Service.Hashing;
+using PasswordGeneratorApi.Domain.Utils;
 
-namespace PasswordGeneratorApi.Tests;
+namespace PasswordGeneratorApi.Domain.Test.Services;
 
 public abstract class BaseTests<T>
 {
@@ -21,13 +22,14 @@ public abstract class BaseTests<T>
     }
     private IHost GetHost()
     {
-        var randomGenerator = new Mock<Random>();
-
         return Host.CreateDefaultBuilder()
             .ConfigureServices((_, services) =>
             {
-                services.AddDomainServices()
-                    .TryAddSingleton<Random>();
+                services
+                    .AddTransient<PasswordGenerator>()
+                    .AddTransient<SHA256Hasher>()
+                    .AddTransient<IHasherFactory, HasherFactory>()
+                    .AddTransient<IRandomNumberGenerator, RandomNumberGenerator>();
             })
             .Build();
     }

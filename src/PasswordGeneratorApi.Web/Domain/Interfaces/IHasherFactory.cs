@@ -1,8 +1,6 @@
-using PasswordGeneratorApi.Domain.Interfaces;
-
-namespace PasswordGeneratorApi.Domain;
+namespace PasswordGeneratorApi.Domain.Interfaces;
 
 public interface IHasherFactory
 {
-    IHasher CreatePasswordGenerator(string schema);
+    IHasher CreatePasswordHasher(string schema);
 }

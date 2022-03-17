@@ -1,23 +1,19 @@
-using PasswordGeneratorApi.Domain;
 using PasswordGeneratorApi.Domain.Interfaces;
 using PasswordGeneratorApi.Domain.Service;
 using PasswordGeneratorApi.Domain.Service.Hashing;
 using PasswordGeneratorApi.Domain.Utils;
-using PasswordGeneratorApi.Domain.Web;
 
 namespace PasswordGeneratorApi.DependencyInjection;
-
 public static class ServiceRegistrationExtension
 {
-    public static IServiceCollection AddDomainServices(this IServiceCollection services)
+    public static void AddDomainServices(this IServiceCollection services)
     {
-        return services
-            .AddTransient<BasePasswordGenerator>()
+        services
             .AddTransient<NaiveHasher>()
-            .AddTransient<Md5Generator>()
+            .AddTransient<Md5Hasher>()
+            .AddTransient<SHA256Hasher>()
             .AddTransient<IPasswordGenerator, PasswordGenerator>()
             .AddTransient<IHasherFactory, HasherFactory>()
-            .AddTransient<IRandomNumberGenerator, RandomNumberGenerator>()
-            .AddTransient<SHA256Generator>();
+            .AddTransient<IRandomNumberGenerator, RandomNumberGenerator>();
     }
 }
