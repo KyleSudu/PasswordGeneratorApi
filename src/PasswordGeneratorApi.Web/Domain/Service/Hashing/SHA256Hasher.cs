@@ -11,6 +11,7 @@ public class SHA256Hasher: IHasher
     public string Hash(string input)
     {
         using var mySHA256 = SHA256.Create();
-        return Encoding.UTF8.GetString(mySHA256.ComputeHash(Encoding.UTF8.GetBytes(input)));    
+        return string.Join("", mySHA256.ComputeHash(Encoding.UTF8.GetBytes(input)).Select(b => b.ToString("X2")));    
+
     }
 }

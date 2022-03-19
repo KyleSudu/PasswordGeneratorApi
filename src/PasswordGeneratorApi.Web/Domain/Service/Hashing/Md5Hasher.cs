@@ -9,6 +9,6 @@ public class Md5Hasher: IHasher
     public string Hash(string input)
     {
         using var md5Hasher = MD5.Create();
-        return Encoding.UTF8.GetString(md5Hasher.ComputeHash(Encoding.UTF8.GetBytes(input)));    
+        return string.Join("", md5Hasher.ComputeHash(Encoding.UTF8.GetBytes(input)).Select(b => b.ToString("X2")));    
     }
 }
