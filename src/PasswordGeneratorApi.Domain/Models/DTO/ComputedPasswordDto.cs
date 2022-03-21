@@ -1,4 +1,4 @@
-namespace PasswordGeneratorApi.Domain.Web.Domain.Models.DTO;
+namespace PasswordGeneratorApi.Domain.Models.DTO;
 
 public record ComputedPassword
 {

@@ -1,15 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "+NZpatS3XsSsFnqnq/mKDGCHMRrqEiozUkd2RpfyjWGnV695nHEcvLMJ/keRj20RXvKrEBQs+frwLlLWHdtpAw==",
+  "dgSpecHash": "5nZEFHuQQm3WOEXAZrZXLLvb0XdkrY/NhME3Qr30l+q1OSBusEDcEvXmHkFZrq/Q6hYSrXZND9WQ52m1A5p4IA==",
   "success": true,
   "projectFilePath": "/Users/kyle/Workspaces/Kyle/PasswordGeneratorApi/src/PasswordGeneratorApi.Web/PasswordGeneratorApi.Web.csproj",
   "expectedPackageFiles": [
     "/Users/kyle/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/kyle/.nuget/packages/microsoft.extensions.dependencyinjection/6.0.0/microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
+    "/Users/kyle/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "/Users/kyle/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
     "/Users/kyle/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "/Users/kyle/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "/Users/kyle/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
-    "/Users/kyle/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+    "/Users/kyle/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
+    "/Users/kyle/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

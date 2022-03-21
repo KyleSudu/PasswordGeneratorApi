@@ -1,7 +1,8 @@
+using Microsoft.Extensions.DependencyInjection;
+using PasswordGeneratorApi.Application.Services.Hashing;
 using PasswordGeneratorApi.Domain.Interfaces;
-using PasswordGeneratorApi.Domain.Service.Hashing;
 
-namespace PasswordGeneratorApi;
+namespace PasswordGeneratorApi.Application.Factories;
 
 public class HasherFactory: IHasherFactory
 {

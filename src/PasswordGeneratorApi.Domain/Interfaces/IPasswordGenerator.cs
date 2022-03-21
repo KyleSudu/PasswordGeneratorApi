@@ -1,4 +1,4 @@
-using PasswordGeneratorApi.Domain.Web.Domain.Models.DTO;
+using PasswordGeneratorApi.Domain.Models.DTO;
 
 namespace PasswordGeneratorApi.Domain.Interfaces;
 

@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using PasswordGeneratorApi.Domain.Service.Hashing;
+using PasswordGeneratorApi.Application.Services.Hashing;
 
 namespace PasswordGeneratorApi.Domain.Test.Services;
 

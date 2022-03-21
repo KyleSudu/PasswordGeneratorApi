@@ -1,9 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.DependencyInjection.Extensions;
 using PasswordGeneratorApi.DependencyInjection;
-using PasswordGeneratorApi.Domain;
 using PasswordGeneratorApi.Domain.Interfaces;
-using PasswordGeneratorApi.Domain.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,6 +1,7 @@
+using PasswordGeneratorApi.Application.Factories;
+using PasswordGeneratorApi.Application.Services;
+using PasswordGeneratorApi.Application.Services.Hashing;
 using PasswordGeneratorApi.Domain.Interfaces;
-using PasswordGeneratorApi.Domain.Service;
-using PasswordGeneratorApi.Domain.Service.Hashing;
 using PasswordGeneratorApi.Domain.Utils;
 
 namespace PasswordGeneratorApi.DependencyInjection;

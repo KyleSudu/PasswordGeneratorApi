@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordGeneratorApi.Domain
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordGeneratorApi.Domain.Test", "PasswordGeneratorApi.Domain.Test\PasswordGeneratorApi.Domain.Test.csproj", "{57C483C8-6A32-42BD-81BB-30C28EEAE070}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordGeneratorApi.Application", "PasswordGeneratorApi.Application\PasswordGeneratorApi.Application.csproj", "{A6A639ED-A960-4BCC-896B-C59B87FDA3ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{57C483C8-6A32-42BD-81BB-30C28EEAE070}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57C483C8-6A32-42BD-81BB-30C28EEAE070}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57C483C8-6A32-42BD-81BB-30C28EEAE070}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6A639ED-A960-4BCC-896B-C59B87FDA3ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6A639ED-A960-4BCC-896B-C59B87FDA3ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6A639ED-A960-4BCC-896B-C59B87FDA3ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6A639ED-A960-4BCC-896B-C59B87FDA3ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

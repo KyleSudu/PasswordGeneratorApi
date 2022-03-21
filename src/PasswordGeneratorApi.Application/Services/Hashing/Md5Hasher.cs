@@ -2,7 +2,7 @@ using System.Security.Cryptography;
 using System.Text;
 using PasswordGeneratorApi.Domain.Interfaces;
 
-namespace PasswordGeneratorApi.Domain.Service.Hashing;
+namespace PasswordGeneratorApi.Application.Services.Hashing;
 
 public class Md5Hasher: IHasher
 {

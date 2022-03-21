@@ -1,10 +1,8 @@
 using System.Security.Cryptography;
 using System.Text;
 using PasswordGeneratorApi.Domain.Interfaces;
-using PasswordGeneratorApi.Domain.Utils;
-using PasswordGeneratorApi.Domain.Web.Domain.Models.DTO;
 
-namespace PasswordGeneratorApi.Domain.Service.Hashing;
+namespace PasswordGeneratorApi.Application.Services.Hashing;
 
 public class SHA256Hasher: IHasher
 {

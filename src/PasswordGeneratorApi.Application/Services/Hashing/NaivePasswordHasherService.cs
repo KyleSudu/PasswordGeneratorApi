@@ -1,5 +1,6 @@
 using PasswordGeneratorApi.Domain.Interfaces;
-namespace PasswordGeneratorApi.Domain.Service.Hashing;
+
+namespace PasswordGeneratorApi.Application.Services.Hashing;
 
 public class NaiveHasher: IHasher
 {

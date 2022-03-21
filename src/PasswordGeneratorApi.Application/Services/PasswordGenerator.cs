@@ -1,7 +1,7 @@
 using PasswordGeneratorApi.Domain.Interfaces;
-using PasswordGeneratorApi.Domain.Web.Domain.Models.DTO;
+using PasswordGeneratorApi.Domain.Models.DTO;
 
-namespace PasswordGeneratorApi.Domain.Service;
+namespace PasswordGeneratorApi.Application.Services;
 
 public class PasswordGenerator: IPasswordGenerator
 {
