@@ -8,7 +8,8 @@ public class PasswordGenerator: IPasswordGenerator
     private static int _passwordLength;
     private readonly IHasherFactory _hasherFactory;
     private readonly IRandomNumberGenerator _randomNumberGenerator;
-   
+    private static string _validChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+
     public PasswordGenerator(IHasherFactory hasherFactory, IRandomNumberGenerator randomNumberGenerator)
     {
         _randomNumberGenerator = randomNumberGenerator;
@@ -31,14 +32,12 @@ public class PasswordGenerator: IPasswordGenerator
     
     private string GenerateBasePassword()
     {
-        var guidObject = Guid.NewGuid().ToByteArray();
+        var buffer = new char[_passwordLength];
 
-        var randomCharacters = new List<char>();
         for (var i = 0; i < _passwordLength; i++)
         {
-            var position = _randomNumberGenerator.GetRandomInt(0, guidObject.Length);
-            randomCharacters.Add((char)guidObject[position]);
+            buffer[i] = _validChars[_randomNumberGenerator.GetRandomInt(0, _passwordLength)];
         }
-        return new string(randomCharacters.ToArray());
+        return new string(buffer);
     }
 }
